@@ -1,0 +1,32 @@
+<!-- html/profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Profile</h1>
+        
+        <!-- Profile Form -->
+        <form id="profile-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" disabled>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone">
+
+            <button type="submit">Update Profile</button>
+        </form>
+    </div>
+
+    <script type="module" src="../services/firebase.js"></script>
+<script type="module" src="../js/profile-management.js"></script>
+</body>
+</html>
